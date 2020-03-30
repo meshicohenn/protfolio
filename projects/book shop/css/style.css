@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+h1{
+    padding-top: 30px;
+    font-family: cursive;
+    font-size: 35px;
+    margin: 0;
+    font-style: italic;
+    padding-left: 12px;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url("../img/cake.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    margin-left: 15px;
+
+}
+
+button{
+    background-color: rgb(229, 203, 234);
+    font-style: oblique;
+    font-family: inherit;
+    border-color: rgb(231, 196, 237);
+}
+.books-table{
+    border-collapse: collapse;
+    margin-top: 27px;
+    background-color: rgba(248, 244, 244, 0.692);
+    box-shadow: 0 0 15px #000000;
+}
+
+th, td{
+    padding: 10px;
+    font-family: cursive;
+    border-width: 1.5px;
+}
+
+.book-img{
+    font-size: 100px;
+}
+
+.add-book{
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: block;
+    margin-top: 30px;
+}
+
+.modal {
+    background-color: #ecafd1;
+    border-style: groove;
+    border-width: 2px;
+    border-color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 95%;
+    min-width: 300px;
+    text-align: center;
+    font-family: cursive;
+    width: 30vw;
+}
+
+.modal span{
+    font-size: 10px;
+    margin: 10px;
+    display: block;
+}
+
+.modal img{
+    margin-top: 15px;
+    border-style: solid;
+    width:130px;
+    height:180px;
+}
+
+.book-name,.book-price{
+    cursor: pointer;
+}
+.book-name:hover ,.book-price:hover{
+    font-weight: bold;
+    background-color: blueviolet;
+}
+
+.pages{
+    margin-top: 10px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 90px;
+    background-color: rgba(248, 244, 244, 0.692);
+    display: flex;
+    justify-content: space-between
+}
+.book-page{
+    text-align: center;
+}
+
