@@ -10,14 +10,15 @@ function renderPortfolio() {
     var projects = getProjects();
     var strHTML = '';
     strHTML = projects.map(proj => {
-        return `<div class="col-md-4 col-sm-6 portfolio-item animated zoomIn">
+        return `<div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" onclick="renderModal('${proj.id}')" href="#portfolioModal">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            </a><img class="img-fluid" src="${proj.imgGallery}" alt="">
+            <img class="img-fluid" src="${proj.imgGallery}" alt="">
+            </a>
           <div class="portfolio-caption">
             <h4>${proj.name}</h4>
             <p class="text-muted">${proj.title}</p>
